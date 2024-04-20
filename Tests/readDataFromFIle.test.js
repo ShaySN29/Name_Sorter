@@ -1,7 +1,7 @@
 const { readDataFromFile } = require('../Modules/fileReaderAndWriter.js');
 
 function test_readDataFromFile() {
-    const fileContents = readDataFromFile('testFIle.txt');
+    const fileContents = readDataFromFile('./Tests/testFile.txt');
 
     return fileContents;
 }
