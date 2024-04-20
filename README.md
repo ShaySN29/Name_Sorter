@@ -17,3 +17,7 @@ The project was created with Node.js and Javascript. Jest was used for the unit 
 ## Running Unit Tests:
 
 - "jest" in the terminal to run the unit tests
+
+## CI build in Appveyor Link:
+
+https://ci.appveyor.com/project/ShaySN29/name-sorter
