@@ -1,7 +1,7 @@
 const { sortNames } = require('../Modules/sortingNames.js');
 
 
-function test_sortNamesForGivenNames() {
+function test_sortNames() {
     let peopleArray = [
         { givenNames: ["John", "Michael"], lastName: "Smith" },
         { givenNames: ["John", "David"], lastName: "Smith" },
@@ -14,18 +14,18 @@ function test_sortNamesForGivenNames() {
     // console.log(sortedNames);
 
     return sortedNames;
-
-    // return sortedNames[0].givenNames.join(" ");
 }
 
-// test_sortNamesForGivenNames();
-
-test("Returns the first correct given names", () => {
-    const sortedNames = test_sortNamesForGivenNames();
+test("Returns correct names", () => {
+    const sortedNames = test_sortNames();
 
     expect(sortedNames[0].givenNames.join(" ")).toBe("David William")
-    expect(sortedNames[0].lastName).toBe("Brown")
 
-    expect(sortedNames[1].givenNames.join(" ")).toBe("Jacob Daniel")
     expect(sortedNames[1].lastName).toBe("Evans")
+
+    expect(sortedNames[2].givenNames.join(" ")).toBe("John David")
+
+    expect(sortedNames[3].lastName).toBe("Smith")
+
+    expect(sortedNames[4].givenNames.join(" ")).toBe("Emily Grace")
 });
