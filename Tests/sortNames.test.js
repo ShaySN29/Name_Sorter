@@ -12,11 +12,20 @@ function test_sortNamesForGivenNames() {
 
     const sortedNames = sortNames(peopleArray);
     // console.log(sortedNames);
-    return sortedNames[0].givenNames.join(" ");
+
+    return sortedNames;
+
+    // return sortedNames[0].givenNames.join(" ");
 }
 
 // test_sortNamesForGivenNames();
 
 test("Returns the first correct given names", () => {
-    expect(test_sortNamesForGivenNames()).toBe("David William")
+    const sortedNames = test_sortNamesForGivenNames();
+
+    expect(sortedNames[0].givenNames.join(" ")).toBe("David William")
+    expect(sortedNames[0].lastName).toBe("Brown")
+
+    expect(sortedNames[1].givenNames.join(" ")).toBe("Jacob Daniel")
+    expect(sortedNames[1].lastName).toBe("Evans")
 });
