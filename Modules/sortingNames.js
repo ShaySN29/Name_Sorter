@@ -1,5 +1,4 @@
-// The sortingNames Module receives the unsorted list of names in the people array from main.js and sorts them alphabetically.
-
+// The sortNames function receives the unsorted list of names in the people array from main.js and sorts them alphabetically.
 function sortNames(peopleArray) {
 
     let sortedNames = peopleArray.slice().sort((a, b) => {
